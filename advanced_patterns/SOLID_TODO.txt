@@ -1,0 +1,16 @@
+SOLID Principles Status:
+
+✅ 01_solid_srp.cpp - Single Responsibility Principle
+✅ 02_solid_ocp.cpp - Open/Closed Principle
+⏳ 03_solid_lsp.cpp - Liskov Substitution Principle (CREATING NOW)
+⏳ 04_solid_isp.cpp - Interface Segregation Principle (CREATING NOW)
+⏳ 05_solid_dip.cpp - Dependency Inversion Principle (CREATING NOW)
+
+Additional Patterns:
+✅ 06_crtp.cpp - Curiously Recurring Template Pattern
+
+Still TODO:
+- 07_raii.cpp
+- 08_pimpl.cpp
+- 09_type_erasure.cpp
+- 10_sfinae.cpp
