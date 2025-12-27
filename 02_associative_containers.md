@@ -439,9 +439,7 @@ int main() {
 ### Important: operator[] vs at() vs find()
 
 ```cpp
-{% raw %}
-std::map<std::string, int> m = {{"A", 1}, {"B", 2}};
-{% endraw %}
+std::map<std::string, int> m = { {"A", 1}, {"B", 2} };
 
 // operator[] - creates if doesn't exist
 int x = m["C"];        // Creates "C" with value 0
