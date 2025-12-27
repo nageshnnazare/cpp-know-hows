@@ -443,7 +443,7 @@ std::map<std::string, int> m = { {"A", 1}, {"B", 2} };
 
 // operator[] - creates if doesn't exist
 int x = m["C"];        // Creates "C" with value 0
-// m = {{"A", 1}, {"B", 2}, {"C", 0}}
+// m = { {"A", 1}, {"B", 2}, {"C", 0} }
 
 // at() - throws exception if doesn't exist
 try {
@@ -515,14 +515,14 @@ for (const auto& [key, value] : m) {
 
 ```cpp
 // Node extraction (move nodes between maps without reallocation)
-std::map<int, std::string> m1 = {{1, "a"}, {2, "b"}};
-std::map<int, std::string> m2 = {{3, "c"}};
+std::map<int, std::string> m1 = { {1, "a"}, {2, "b"} };
+std::map<int, std::string> m2 = { {3, "c"} };
 
 // Extract node
 auto node = m1.extract(1);  // Removes {1, "a"} from m1
 node.key() = 4;             // Change key
 m2.insert(std::move(node)); // Insert into m2
-// m1 = {{2, "b"}}, m2 = {{3, "c"}, {4, "a"}}
+// m1 = { {2, "b"} }, m2 = { {3, "c"}, {4, "a"} }
 
 // Merge maps
 m2.merge(m1);  // Move all elements from m1 to m2
@@ -670,9 +670,9 @@ author_books.insert({"Tolkien", "LOTR: Return of King"});
 
 // Use Case 3: Event log with timestamps
 std::multimap<std::string, Event> timeline;
-timeline.insert({"2024-01-01", Event{/* ... */}});
-timeline.insert({"2024-01-01", Event{/* ... */}});
-timeline.insert({"2024-01-02", Event{/* ... */}});
+timeline.insert({"2024-01-01", Event{/* ... */} });
+timeline.insert({"2024-01-01", Event{/* ... */} });
+timeline.insert({"2024-01-02", Event{/* ... */} });
 ```
 
 ### Alternative to multimap
@@ -824,7 +824,7 @@ std::map<int, int> frequency;
 for (int x : data) {
     frequency[x]++;  // operator[] creates with 0 if doesn't exist
 }
-// frequency = {{1, 1}, {2, 2}, {3, 3}, {4, 4}}
+// frequency = { {1, 1}, {2, 2}, {3, 3}, {4, 4} }
 ```
 
 ### Pattern 2: Unique Elements with Order
@@ -923,7 +923,7 @@ std::set<int> s = {1, 2, 3};
 auto it = s.begin();
 // *it = 10;  // ERROR: elements are const!
 
-std::map<int, int> m = {{1, 10}, {2, 20}};
+std::map<int, int> m = { {1, 10}, {2, 20} };
 auto mit = m.begin();
 // mit->first = 5;   // ERROR: key is const!
 mit->second = 99;    // OK: value is mutable
@@ -1040,7 +1040,7 @@ public:
     // Record grade (multimap allows multiple grades per student)
     void record_grade(int student_id, const std::string& course, double grade) {
         // Add to student grades multimap
-        student_grades_.insert({student_id, {course, grade}});
+        student_grades_.insert({student_id, {course, grade} });
         
         // Add to sorted grades multiset
         all_grades_sorted_.insert(grade);

@@ -338,7 +338,7 @@ int main() {
     
     // Arrow operator (for objects)
     struct Point { int x, y; };
-    std::vector<Point> points = {{1, 2}, {3, 4}};
+    std::vector<Point> points = { {1, 2}, {3, 4} };
     int x = points.begin()->x;       // 1
     
     // Increment/Decrement

@@ -1429,13 +1429,13 @@ public:
     }
     
     void set_root(const Process& p) {
-        root_ = new TreeNode{p, {}};
+        root_ = new TreeNode{p, { } };
     }
     
     void add_child(int parent_pid, const Process& child) {
         // Simplified: only adds to root for demo
         if (root_ && root_->process.pid == parent_pid) {
-            root_->children.push_back(new TreeNode{child, {}});
+            root_->children.push_back(new TreeNode{child, { } });
         }
     }
     

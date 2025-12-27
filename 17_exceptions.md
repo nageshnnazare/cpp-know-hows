@@ -1033,7 +1033,7 @@ public:
     };
     
     static Result query_no_throw(const std::string& query) noexcept {
-        Result result{DBError::Success, {}};
+        Result result{DBError::Success, { } };
         
         try {
             // Simulate query

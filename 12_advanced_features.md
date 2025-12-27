@@ -806,7 +806,7 @@ int main() {
     auto [i, d, s] = t;
     
     // Iterate map
-    std::map<std::string, int> ages = {{"Alice", 25}, {"Bob", 30}};
+    std::map<std::string, int> ages = { {"Alice", 25}, {"Bob", 30} };
     for (const auto& [name, age] : ages) {
         std::cout << name << ": " << age << '\n';
     }

@@ -684,7 +684,7 @@ int main() {
     bool less = a < b;  // true (compares first, then second)
     
     // Common use: map iterators
-    std::map<int, std::string> m = {{1, "one"}, {2, "two"}};
+    std::map<int, std::string> m = { {1, "one"}, {2, "two"} };
     for (const auto& [key, value] : m) {  // Structured binding
         std::cout << key << ": " << value << '\n';
     }
