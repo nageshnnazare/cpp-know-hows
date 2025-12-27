@@ -748,7 +748,7 @@ std::unordered_map<std::string, int> count_words(const std::vector<std::string>&
 // Usage:
 std::vector<std::string> text = {"hello", "world", "hello", "cpp"};
 auto freq = count_words(text);
-// freq = {{"hello", 2}, {"world", 1}, {"cpp", 1}}
+// freq = { {"hello", 2}, {"world", 1}, {"cpp", 1} }
 ```
 
 ### Use Case 3: Graph Adjacency List
