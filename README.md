@@ -15,19 +15,19 @@
 3. Keep `cheatsheets/` open while you code.
 
 ```
-                    ┌──────────────────────────────────────────┐
-                    │            C++ MASTERY MAP               │
-                    └──────────────────────────────────────────┘
+            ┌──────────────────────────────────────────┐
+            │            C++ MASTERY MAP               │
+            └──────────────────────────────────────────┘
 
-  FOUNDATIONS              CORE LANGUAGE            OBJECT MODEL
+   FOUNDATIONS              CORE LANGUAGE           OBJECT MODEL
   ┌───────────────┐        ┌───────────────┐       ┌────────────────┐
   │ 00 Toolchain  │        │ 03 Pointers & │       │ 05 Classes     │
   │ 01 Types/Ops  │  ───▶  │    Memory     │ ───▶  │ 06 Copy/Move   │
   │ 02 Flow/Fns   │        │ 04 const/str  │       │ 07 Inheritance │
   └───────────────┘        └───────────────┘       │ 08 Operators   │
                                                    └────────────────┘
-                                                   
-  GENERIC / LIBRARY          MODERN & SAFETY          CONCURRENCY / DEEP
+
+   GENERIC / LIBRARY        MODERN & SAFETY         CONCURRENCY / DEEP
   ┌───────────────┐        ┌───────────────┐       ┌────────────────┐
   │ 09 Templates  │        │ 11 Smart ptrs │       │ 15 Threads/    │
   │ 10 STL        │  ───▶  │ 12 Lambdas    │ ───▶  │    Memory model│
